@@ -17,13 +17,13 @@
 ;==========================================================
 
 [colors]
-background = #0B0C0F
-background-alt = #242933
-foreground = #D8DEE9
-primary = #DE38FF
-secondary = #AF47FF
-alert = #FF6691
-disabled = #3B4252
+background = #282c34
+background-alt = #363C47
+foreground = #DADADA
+primary = #61AFEF
+secondary = #E06C75
+alert = #E06C75
+disabled = #393E48
 
 [bar/bar1]
 width = 100%
@@ -48,7 +48,7 @@ module-margin = 1
 separator = |
 separator-foreground = ${colors.disabled}
 
-font-0 = JetBrains Mono NL:style=Bold:size=10
+font-0 = JetBrains Mono Nerd Font:style=Bold:size=10.5
 font-1 = NotoSansCJKJP:size=10
 
 modules-left = xworkspaces xwindow
@@ -106,20 +106,20 @@ label = %title:0:60:...%
 type = internal/pulseaudio
 
 format-volume = <label-volume> <bar-volume>
-label-volume = VOL %percentage%%
+label-volume = ボリューム %percentage%%
 label-volume-foreground = ${root.foreground}
 
-label-muted = 🔇 muted
+label-muted = 🔇 ミュート
 label-muted-foreground = #666
 
 bar-volume-width = 10
-bar-volume-foreground-0 = #55aa55
-bar-volume-foreground-1 = #55aa55
-bar-volume-foreground-2 = #55aa55
-bar-volume-foreground-3 = #55aa55
-bar-volume-foreground-4 = #55aa55
-bar-volume-foreground-5 = #f5a70a
-bar-volume-foreground-6 = #ff5555
+bar-volume-foreground-0 = #98c379
+bar-volume-foreground-1 = #98c379
+bar-volume-foreground-2 = #98c379
+bar-volume-foreground-3 = #98c379
+bar-volume-foreground-4 = #e5c07b
+bar-volume-foreground-5 = #e5c07b
+bar-volume-foreground-6 = #e06c75
 bar-volume-gradient = false
 bar-volume-indicator = |
 bar-volume-indicator-font = 2
@@ -155,15 +155,15 @@ label-indicator-background = ${colors.secondary}
 
 [module/memory]
 type = internal/memory
-interval = 2
-format-prefix = "RAM "
+interval = 2[
+format-prefix = "メモリ "
 format-prefix-foreground = ${colors.primary}
 label = %percentage_used:2%%
 
 [module/cpu]
 type = internal/cpu
 interval = 2
-format-prefix = "CPU "
+format-prefix = "脳 "
 format-prefix-foreground = ${colors.primary}
 label = %percentage:2%%
 
